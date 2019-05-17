@@ -57,7 +57,7 @@ public class UserRestController {
     }
 
 
-    // mapping for put, update existing user
+    // mapping for put, update existing users
 
     @PutMapping("/users")
     public User updateUser(@RequestBody User theUser) {
