@@ -47,12 +47,11 @@ CREATE TABLE `user` (
   `gender` varchar(45) DEFAULT NULL,
   `status` int(11)  NULL, 
   `imageURL` varchar(2083) DEFAULT NULL,
-
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 ```
 
-Then change [application.properties](https://github.com/Fnil/springboot-android-chat-client) to your url, username, password
+Then change [application.properties](https://github.com/Fnil/springboot-android-chat-server/blob/master/src/main/resources/application.properties) to your url, username, password
 
 ```
 server.port=8080
