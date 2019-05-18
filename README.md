@@ -18,7 +18,7 @@ Good starting template for anyone that is interested in building their own chat 
 
 An instance compiled from this project is already running on aws. You can directly access it from the android side.
 
-To create your own backend, first execute the 'chat' and 'user' table
+To create your own backend, first create the 'chat' and 'user' table. 
 
 
 ```sql
@@ -51,7 +51,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 ```
 
-Then change [application.properties](https://github.com/Fnil/springboot-android-chat-server/blob/master/src/main/resources/application.properties) to your url, username, password
+Then change [application.properties](https://github.com/Fnil/springboot-android-chat-server/blob/master/src/main/resources/application.properties) to your url, username, password.
 
 ```
 server.port=8080
