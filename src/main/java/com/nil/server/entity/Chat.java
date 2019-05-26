@@ -33,7 +33,6 @@ public class Chat {
         this.content = content;
     }
 
-
     public int getId() {
         return id;
     }

@@ -29,7 +29,6 @@ public class ChatWebSocketController {
 
         int senderID = Integer.parseInt(senderIDString);
         int receiverID = Integer.parseInt(receiverIDString);
-
         chatService.save(new Chat(senderID, receiverID, content));
         return chatService.findBySenderOrReceiver(senderID, receiverID);
 
@@ -43,9 +42,7 @@ public class ChatWebSocketController {
         int senderID = Integer.parseInt(senderIDString);
         int receiverID = Integer.parseInt(receiverIDString);
         return chatService.findBySenderOrReceiver(senderID, receiverID);
-
     }
-
 
     @MessageMapping("/hello/{receiverIDString}")
     @SendTo("/topics/event/{receiverIDString}")
@@ -54,6 +51,14 @@ public class ChatWebSocketController {
         int receiverID = Integer.parseInt(receiverIDString);
         return chatService.findByReceiver(receiverID);
     }
+
+
+
+
+
+
+
+
 
 
 }

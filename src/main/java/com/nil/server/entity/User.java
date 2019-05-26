@@ -1,6 +1,7 @@
 package com.nil.server.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -29,6 +30,7 @@ public class User {
 
     @Column(name = "imageURL")
     private String imageURL;
+
 
     public User() {
     }

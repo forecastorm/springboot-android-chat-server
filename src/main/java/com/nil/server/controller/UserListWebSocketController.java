@@ -29,7 +29,6 @@ public class UserListWebSocketController {
         User user = userService.findById(id);
         user.setStatus(0);
         userService.save(user);
-
         return userService.findAll();
 
     }
@@ -46,12 +45,14 @@ public class UserListWebSocketController {
         return userService.findAll();
     }
 
-
     @MessageMapping("/userList/status/listen")
     @SendTo("/topics/userList")
     public List<User> subscribeToUserList() {
 
         return userService.findAll();
     }
+
+
+ 
 
 }
